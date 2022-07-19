@@ -1,0 +1,209 @@
+
+Try the new cross-platform PowerShell https://aka.ms/pscore6
+
+PS C:\Users\shobhdas\Desktop\Git> git clone "https://github.com/shobhitdas/PYTHON"
+Cloning into 'PYTHON'...
+remote: Enumerating objects: 7, done.
+remote: Counting objects: 100% (7/7), done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 7 (delta 0), reused 0 (delta 0), pack-reused 0
+PS C:\Users\shobhdas\Desktop\Git\PYTHON> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\shobhdas\Desktop\Git\PYTHON> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   README.md
+
+PS C:\Users\shobhdas\Desktop\Git\PYTHON> git commit -m "modified" -m "description"
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+PS C:\Users\shobhdas\Desktop\Git\PYTHON> git push origin main
+info: please complete authentication in your browser...
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 319 bytes | 319.00 KiB/s, done.
+PS C:\Users\shobhdas\Desktop\Git\PYTHON> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Users\shobhdas\Desktop\Git\PYTHON> git add .
+PS C:\Users\shobhdas\Desktop\Git\PYTHON> git commit -m "updated index" -m "index file added"
+
+ 1 file changed, 1 insertion(+)
+ create mode 100644 index.html
+PS C:\Users\shobhdas\Desktop\Git\PYTHON> git push origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 332 bytes | 332.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/shobhitdas/PYTHON
+   cc01017..5008f73  main -> main
+PS C:\Users\shobhdas\Desktop\Git\PYTHON> git pull
+remote: Counting objects: 100% (4/4), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+From https://github.com/shobhitdas/PYTHON
+   5008f73..8cb699e  main       -> origin/main
+Fast-forward
+ new file | 1 +
+ create mode 100644 new file
+PS C:\Users\shobhdas\Desktop\Git\PYTHON> git branch
+PS C:\Users\shobhdas\Desktop\Git\PYTHON> git checkout -b feauture
+PS C:\Users\shobhdas\Desktop\Git\PYTHON> git branch
+  main
+PS C:\Users\shobhdas\Desktop\Git\PYTHON> git checkout main  
+Your branch is up to date with 'origin/main'.
+PS C:\Users\shobhdas\Desktop\Git\PYTHON> git branch
+  feauture
+* main
+PS C:\Users\shobhdas\Desktop\Git\PYTHON> git branch feauture
+fatal: a branch named 'feauture' already exists
+PS C:\Users\shobhdas\Desktop\Git\PYTHON> git checkout feauture
+Switched to branch 'feauture'
+PS C:\Users\shobhdas\Desktop\Git\PYTHON> git branch
+* feauture
+  main
+PS C:\Users\shobhdas\Desktop\Git\PYTHON> git log
+commit 8cb699e22badb293c49a1eed647ab25f4b611771 (HEAD -> feauture, origin/main, origin/HEAD, main)
+Author: SHOBHIT DAS <109502402+shobhitdas@users.noreply.github.com>
+Date:   Mon Jul 18 17:00:11 2022 +0530
+
+    Create new file
+
+commit 5008f7341102684f0c3483dfc65ea643698012a4
+Author: shobhitdas <shobhit1986srd@gmail.com>
+Date:   Mon Jul 18 16:47:09 2022 +0530
+
+    updated index
+...skipping...
+
+
+                   SUMMARY OF LESS COMMANDS
+
+      Commands marked with * may be preceded by a number, N.
+      Notes in parentheses indicate the behavior if N is given.
+      A key preceded by a caret indicates the Ctrl key; thus ^K is ctrl-K.
+
+  h  H                 Display this help.
+  q  :q  Q  :Q  ZZ     Exit.
+ ---------------------------------------------------------------------------
+
+                           MOVING
+HELP -- Press RETURN for more, or q when done...skipping...
+commit 8cb699e22badb293c49a1eed647ab25f4b611771 (HEAD -> feauture, origin/main, origin/HEAD, main)
+Author: SHOBHIT DAS <109502402+shobhitdas@users.noreply.github.com>
+Date:   Mon Jul 18 17:00:11 2022 +0530
+
+    Create new file
+
+commit 5008f7341102684f0c3483dfc65ea643698012a4
+Author: shobhitdas <shobhit1986srd@gmail.com>
+Date:   Mon Jul 18 16:47:09 2022 +0530
+
+    updated index
+
+    index file added
+
+commit cc01017dc1518d24f5a76f1e9adc60a6a5f273c8
+Author: shobhitdas <shobhit1986srd@gmail.com>
+Date:   Mon Jul 18 16:41:19 2022 +0530
+
+    modified
+
+    description
+commit 8cb699e22badb293c49a1eed647ab25f4b611771 (HEAD -> feauture, origin/main, origin/HEAD, main)
+Author: SHOBHIT DAS <109502402+shobhitdas@users.noreply.github.com>
+Date:   Mon Jul 18 17:00:11 2022 +0530
+
+    Create new file
+
+commit 5008f7341102684f0c3483dfc65ea643698012a4
+Author: shobhitdas <shobhit1986srd@gmail.com>
+Date:   Mon Jul 18 16:47:09 2022 +0530
+
+    updated index
+
+    index file added
+
+commit cc01017dc1518d24f5a76f1e9adc60a6a5f273c8
+Author: shobhitdas <shobhit1986srd@gmail.com>
+Date:   Mon Jul 18 16:41:19 2022 +0530
+
+    modified
+
+    description
+
+s.noreply.github.com>
+
+
+
+s.noreply.github.com>
+
+
+
+PS C:\Users\shobhdas\Desktop\Git\PYTHON> git checkout feauture 8cb699e22badb293c49a1eed647ab25f4b611771
+error: pathspec '8cb699e22badb293c49a1eed647ab25f4b611771' did not match any file(s) known t* feauture
+  main
+PS C:\Users\shobhdas\Desktop\Git\PYTHON> git status 
+On branch feauture
+Changes not staged for commit:
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\shobhdas\Desktop\Git\PYTHON> git add .
+PS C:\Users\shobhdas\Desktop\Git\PYTHON> git status 
+On branch feauture
+  (use "git restore --staged <file>..." to unstage)
+        modified:   README.md
+
+PS C:\Users\shobhdas\Desktop\Git\PYTHON> git commit -m "branch" -m " branch created"        
+[feauture c6deb46] branch
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+PS C:\Users\shobhdas\Desktop\Git\PYTHON> git pish origin feauture
+git: 'pish' is not a git command. See 'git --help'.
+
+The most similar command is
+        push
+PS C:\Users\shobhdas\Desktop\Git\PYTHON> git push origin feauture
+Enumerating objects: 5, done.
+Delta compression using up to 8 threads
+Writing objects: 100% (3/3), 317 bytes | 317.00 KiB/s, done.
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'feauture' on GitHub by visiting:
+remote:      https://github.com/shobhitdas/PYTHON/pull/new/feauture
+remote:
+To https://github.com/shobhitdas/PYTHON
+ * [new branch]      feauture -> feauture
+PS C:\Users\shobhdas\Desktop\Git\PYTHON> git checkout feauture
+PS C:\Users\shobhdas\Desktop\Git\PYTHON> git merge main
+PS C:\Users\shobhdas\Desktop\Git\PYTHON> git push origin main
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/shobhitdas/PYTHON'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+PS C:\Users\shobhdas\Desktop\Git\PYTHON> git branch -d feauture
+error: Cannot delete branch 'feauture' checked out at 'C:/Users/shobhdas/Desktop/Git/PYTHON'PS C:\Users\shobhdas\Desktop\Git\PYTHON> git branch -d feature
+error: branch 'feature' not found.
+PS C:\Users\shobhdas\Desktop\Git\PYTHON> git branch -d feauture
+error: Cannot delete branch 'feauture' checked out at 'C:/Users/shobhdas/Desktop/Git/PYTHON'
+PS C:\Users\shobhdas\Desktop\Git\PYTHON> 
